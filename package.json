@@ -1,0 +1,14 @@
+{
+  "name": "ticket-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fullstack-biljettsystem med React, Node.js, Express och SQLite",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "test": "npm test --prefix backend && npm test --prefix frontend",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

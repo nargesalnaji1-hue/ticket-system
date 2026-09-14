@@ -1,0 +1,11 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #172033; background: #eef2f7; line-height: 1.5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { max-width: 1050px; margin: 0 auto; padding: 48px 22px 80px; }
+header { margin-bottom: 28px; } .eyebrow { color: #536dfe; font-size: .78rem; font-weight: 800; letter-spacing: .12em; margin: 0; } h1 { margin: 5px 0; font-size: clamp(2.2rem, 5vw, 4rem); } h2 { margin: 0 0 8px; } p { color: #667085; }
+.actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; } article, .list { background: white; border: 1px solid #dde3ec; border-radius: 16px; padding: 24px; box-shadow: 0 8px 24px #19294d0c; }
+button { border: 0; border-radius: 9px; padding: 11px 16px; font: inherit; font-weight: 700; color: white; background: #536dfe; cursor: pointer; } button:hover { filter: brightness(.94); } button:disabled { opacity: .5; cursor: not-allowed; } .secondary { color: #536dfe; background: #edf0ff; } .danger { color: #c62828; background: #fff0f0; }
+form { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; } label { display: block; width: 100%; font-weight: 700; font-size: .9rem; } input { min-width: 190px; flex: 1; border: 1px solid #ccd5e2; border-radius: 9px; padding: 11px; font: inherit; text-transform: uppercase; }
+.notice { margin: 12px 0; padding: 13px 16px; border-radius: 9px; font-weight: 600; } .success { color: #176b43; background: #e5f7ed; } .error { color: #a32828; background: #ffebeb; }
+.list { margin-top: 18px; } .list-heading { display: flex; justify-content: space-between; gap: 12px; align-items: center; } .table-wrap { overflow-x: auto; } table { width: 100%; border-collapse: collapse; margin-top: 16px; } th, td { text-align: left; padding: 13px 10px; border-top: 1px solid #edf0f4; } th { color: #667085; font-size: .8rem; text-transform: uppercase; } code { font-weight: 800; letter-spacing: .1em; } .badge { display: inline-block; border-radius: 999px; padding: 4px 9px; font-size: .82rem; font-weight: 700; } .available { color: #176b43; background: #e5f7ed; } .used { color: #667085; background: #eef0f3; }
+@media (max-width: 700px) { .actions { grid-template-columns: 1fr; } .container { padding-top: 28px; } }
